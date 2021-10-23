@@ -1,0 +1,38 @@
+@startuml
+
+class Application
+class Directory
+class TodoList
+abstract class  item
+
+Application -- Directory
+Directory *-- TodoList
+TodoList *-- item
+
+abstract class item {
+    - String description
+    - String dueDate
+    - boolean complete
+}
+
+class TodoList {
+    - String name
+    - String[] items
+    + addItem()
+    + deleteItem(items)
+}
+
+class Directory {
+    - HashMap<String, String[]> todoList
+    - HashMap<String, String[]> selection
+    + addList()
+    + removeList(selection)
+    + editList(selection)
+    + saveList(selection)
+}
+
+class Application {
+    + void start(Stage stage)
+    + static void main(String[] args)
+}
+@enduml
