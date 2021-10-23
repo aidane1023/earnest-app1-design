@@ -12,9 +12,12 @@ public class Directory extends Application {
         //Open TodoListEditor page from fxml files
     }
 
-    public void removeList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
+    public HashMap<String, String[]> removeList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
         //Remove selected items from todoList Map.
         //Update todoList Map and clear selection Map
+
+        //Return updated todoList map
+        return null;
     }
 
     public HashMap<String, String[]> editList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
@@ -32,6 +35,7 @@ public class Directory extends Application {
         //Request location for file
         //Read in location
         //Save contents of each array from selection map to a txt file with user provided location and name
+        //clear selection array
     }
 
     public void buildMap() {

@@ -8,18 +8,27 @@ public class TodoList extends Directory {
     public void addItem(String[] items) {
         //Open TodoListItem page from fxml files
     }
-    public void deleteItem(String[] items, String selectedItem) {
+    public String[] deleteItem(String[] items, String selectedItem) {
         //Remove selectedItem from items string
         //Clear selectedItem String
+
+        //return updated items array
+        return null;
     }
 
-    public void editItem(String[] items, String selectedItem) {
+    public String[] editItem(String[] items, String selectedItem) {
         //Open TodoListItem page from fxml files
+
+        //Return any changes made to items array
+        return null;
     }
 
-    public void saveContents(HashMap<String, String[]> todoList) {
+    public HashMap<Integer, String[]> saveContents(HashMap<Integer, String[]> todoList) {
         //Use map from superclass
         //Save to same index as superclass
         //Update all items of array that were changed
+
+        //Return updated map to todoList
+        return null;
     }
 }
