@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Fall 2021 Application Assignment 1 Solution
+ *  Copyright 2021 aidan earnest
+ */
+
 import java.util.HashMap;
 
 public class Directory extends Application {
