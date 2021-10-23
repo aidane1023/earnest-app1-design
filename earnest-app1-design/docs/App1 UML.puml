@@ -18,8 +18,9 @@ abstract class item {
 class TodoList {
     - String name
     - String[] items
+    - String selectedItem
     + addItem()
-    + deleteItem(items)
+    + deleteItem(items, selectedItem)
 }
 
 class Directory {

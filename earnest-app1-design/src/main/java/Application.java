@@ -10,14 +10,13 @@ public class Application extends javafx.application.Application {
         public void start(Stage stage) throws Exception{
             Parent root =
                     FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TodoListManager.fxml")));
-            Scene scene = new Scene(root); // attach scene graph to scene
-            stage.setTitle("Todo List Manager"); // displayed in window's title ba
-            stage.setScene(scene); // attach scene to stage
-            stage.show(); // display the stage
+            Scene scene = new Scene(root);
+            stage.setTitle("Todo List Manager");
+            stage.setScene(scene);
+            stage.show();
         }
 
         public static void main(String[] args) {
-            // create a TipCalculator object and call its start method
             launch(args);
         }
     }
