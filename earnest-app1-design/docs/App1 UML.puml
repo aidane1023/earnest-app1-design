@@ -13,27 +13,33 @@ abstract class item {
     - String description
     - String dueDate
     - boolean complete
+    + saveItem(items)
 }
 
 class TodoList {
     - String name
     - String[] items
     - String selectedItem
-    + addItem()
+    + addItem(items)
     + deleteItem(items, selectedItem)
+    + editItem(items, selectedItem)
+    + saveContents(todoList)
 }
 
 class Directory {
     - HashMap<String, String[]> todoList
     - HashMap<String, String[]> selection
     + addList()
-    + removeList(selection)
+    + removeList(todoList, selection)
     + editList(selection)
     + saveList(selection)
+    + buildMap()
 }
 
 class Application {
     + void start(Stage stage)
     + static void main(String[] args)
+    + void newListButton()
+    + void existingListButton()
 }
 @enduml
