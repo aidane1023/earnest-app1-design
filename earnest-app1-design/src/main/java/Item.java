@@ -8,7 +8,10 @@ public class Item extends TodoList {
     private String dueDate;
     private boolean complete;
 
-    public String[] saveItem(String[] items) {
+    public static String[] saveItem(String[] items) {
+        //Set User Input from fields to established variables
+        //Use boolean to establish state of item (probably use a cross out function or change font color)
+        //Convert description and dueDate into single string to be saved to array
         //Use array from superclass
         //Save item to array at same index
 

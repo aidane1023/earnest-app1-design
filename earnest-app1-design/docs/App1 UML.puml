@@ -29,10 +29,10 @@ class TodoList {
 class Directory {
     - HashMap<String, String[]> todoList
     - HashMap<String, String[]> selection
-    + addList()
-    + removeList(todoList, selection)
-    + editList(selection)
-    + saveList(selection)
+    + addTodoList()
+    + removeTodoList(todoList, selection)
+    + editTodoList(selection)
+    + saveTodoList(selection)
     + buildMap()
 }
 
@@ -41,5 +41,6 @@ class Application {
     + static void main(String[] args)
     + void newListButton()
     + void existingListButton()
+    + void todoListManager()
 }
 @enduml

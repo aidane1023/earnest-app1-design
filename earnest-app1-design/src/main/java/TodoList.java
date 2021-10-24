@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class TodoList extends Directory {
     private String name;
-    private String[] items;
+    public String[] items;
     private String selectedItem;
 
     public void addItem(String[] items) {
@@ -28,7 +28,7 @@ public class TodoList extends Directory {
         return null;
     }
 
-    public HashMap<Integer, String[]> saveContents(HashMap<Integer, String[]> todoList) {
+    public static HashMap<Integer, String[]> saveContents(HashMap<Integer, String[]> todoList) {
         //Use map from superclass
         //Save to same index as superclass
         //Update all items of array that were changed

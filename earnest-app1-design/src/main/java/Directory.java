@@ -7,17 +7,17 @@ import java.util.HashMap;
 
 public class Directory extends Application {
     //Declare maps for storing user data
-    private HashMap<Integer, String[]> todoList;
+    public HashMap<Integer, String[]> todoList;
     private HashMap<Integer, String[]> selection;
 
-    public void addList() {
+    public void addTodoList() {
         //Create new String array and add to map at next index
         //In case of no previous list, run builder
 
         //Open TodoListEditor page from fxml files
     }
 
-    public HashMap<String, String[]> removeList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
+    public HashMap<String, String[]> removeTodoList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
         //Remove selected items from todoList Map.
         //Update todoList Map and clear selection Map
 
@@ -25,7 +25,7 @@ public class Directory extends Application {
         return null;
     }
 
-    public HashMap<String, String[]> editList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
+    public HashMap<String, String[]> editTodoList(HashMap<Integer, String[]> todoList, HashMap<Integer, String[]> selection) {
         //Run an if/else, must have one list selected
         //If condition is met, open selection in TodoListEditor fxml page
         //Else throw error message (requires selection of one list)
@@ -34,7 +34,7 @@ public class Directory extends Application {
         return null;
     }
 
-    public void saveList(HashMap<Integer, String[]> selection) {
+    public void saveTodoList(HashMap<Integer, String[]> selection) {
         //Request name for file
         //Read in name
         //Request location for file
@@ -43,8 +43,9 @@ public class Directory extends Application {
         //clear selection array
     }
 
-    public void buildMap() {
+    public  HashMap<Integer,String[]> buildMap() {
         //build map to contain all todolist for user (up to 256)
-        HashMap<Integer,String> todoList = new HashMap<Integer,String>();
+        HashMap<Integer,String[]> todoList = new HashMap<Integer,String[]>();
+        return todoList;
     }
 }

@@ -25,11 +25,18 @@ public class Application extends javafx.application.Application {
         launch(args);
     }
 
+    //Skeleton needed for map builder
+    Directory directory;
+    public void todoListManager() {
+        directory = new Directory();
+    }
+
     public void newListButton() {
         //Open TodoListEditor page from fxml files
 
         //Create new String array and add to map at next index
         //If no previous list exist, make new map
+        //directory.buildMap(); function call for building map
         //In case on no list call builder function from Directory
     }
 
